@@ -55,7 +55,7 @@ function updateChart(data, device) {
     const xMin = Math.min(...data.time.map(t => parseInt(t.split(':')[0]))); // Example: start from the minimum hour
     const xMax = Math.max(...data.time.map(t => parseInt(t.split(':')[10]))); // Example: end at the maximum hour
     const yMin = 0; // You can set this to the minimum expected power consumption
-    const yMax = Math.max(...data.power) * 1.2; // 20% higher than the maximum power for some margin
+    const yMax = Math.max(...data.power) * 0.2; // 20% higher than the maximum power for some margin
 
     window.myChart = new Chart(ctx, {
         type: 'line',
