@@ -1,5 +1,5 @@
 time,main_power,kettle_power,fan_power,computer_power,mobile_power,iron_power
-00:00:00,50,10,20,30,5,15
+00:00:00,50,10,20,5,5,10
 00:00:01,55,11,22,33,6,16
 00:00:02,60,12,24,36,7,17
 00:00:03,65,13,26,39,8,18
