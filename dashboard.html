@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Monitoring System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" id="logo">
+        <h1>Energy Monitoring System</h1>
+    </header>
+    <div class="container">
+        <aside>
+            <button class="btn" onclick="logout()">Logout</button>
+            <button class="btn" id="mainBtn">Main</button>
+            <button class="btn" id="kettleBtn" onclick="showDeviceChart('kettle')">Electric Kettle</button>
+            <button class="btn" id="fanBtn" onclick="showDeviceChart('fan')">Fan</button>
+            <button class="btn" id="comBtn" onclick="showDeviceChart('computer')">Computer</button>
+            <button class="btn" id="mpBtn" onclick="showDeviceChart('mobile')">Mobile Phone</button>
+            <button class="btn" id="ironBtn" onclick="showDeviceChart('iron')">Electric Iron</button>
+        </aside>
+        <main>
+            <div class="status">
+                <div class="status-box">
+                    <h2>Voltage</h2>
+                    <p id="voltage">0.0 V</p>
+                </div>
+                <div class="status-box">
+                    <h2>Current</h2>
+                    <p id="current">0.0 A</p>
+                </div>
+            </div>
+            <div class="chart-container">
+                <h2 id="chartTitle">Power Consumption</h2>
+                <canvas id="powerChart"></canvas>
+            </div>
+            <iframe id="deviceIframe" style="display:none; width:100%; height:500px; border:none;"></iframe>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
