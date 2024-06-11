@@ -120,7 +120,13 @@ h1, h2 {
     margin: 0 0 1em;
 }
 
+chart-container {
+    width: 80%;  
+    height: 600px; 
+    margin: 0 auto;  
+}
+
 #powerChart {
-    max-width: 600px;
-    margin: 0 auto;
+    width: 100%;
+    height: 100%;
 }
