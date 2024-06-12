@@ -55,7 +55,7 @@ function updateChart(data, device) {
     const xMin = Math.min(...data.time.map(t => parseInt(t.split(':')[0]))); 
     const xMax = Math.max(...data.time.map(t => parseInt(t.split(':')[10]))); 
     const yMin = 0; 
-    const yMax = Math.max(...data.power) * 1.2; 
+    const yMax = Math.max(...data.power) * 0.2; 
 
     window.myChart = new Chart(ctx, {
         type: 'line',
@@ -75,7 +75,7 @@ function updateChart(data, device) {
                 x: {
                     title: {
                         display: true,
-                        text: 'Time'
+                        text: 'Time (s)'
                     },
                     min: xMin,
                     max: xMax
