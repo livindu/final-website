@@ -124,7 +124,7 @@ h1, h2 {
     position: relative; 
     width: 100%;
     max-width: 800px;
-    height: 400px; 
+    height: 100%; 
     
 }
 
