@@ -121,10 +121,10 @@ h1, h2 {
 }
 
 .chart-container {
-   position: relative;
+   /* position: relative; */
     width: 100%;
     max-width: 800px;
-    height: 100%; //400px 
+    height: 100%; /*400px*/ 
     margin: 0 auto; 
 }
 
