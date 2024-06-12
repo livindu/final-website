@@ -85,8 +85,10 @@ function updateChart(data, device) {
                         display: true,
                         text: 'Power (W)'
                     },
-                    min: 0,
-                    max: 100,
+                    min: yMin,
+                    max: yMax
+                    // min: 0,
+                 //   max: 100,
                 }
             },
             responsive: true,
